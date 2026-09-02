@@ -31,6 +31,12 @@ python src/build_site.py --csv results/entropy.csv --site_dir reports/site
 
 ![File size mapped along entropy ordering](results/entropy-vs-file-size.png)
 
+### Ranking detail
+
+![Lowest and highest image entropy rankings from the aggregate results](docs/images/entropy-ranking-summary.png)
+
+The ranking view is generated from the committed `lowest10.csv` and `highest10.csv` outputs and does not redistribute third-party images.
+
 In the analyzed collection, observed entropy ranged from approximately **2.79 bits** for a visually simple image to **17.38 bits** for a complex autumn-foliage image. Aggregate results are included, while the third-party source images are not redistributed.
 
 The analysis code and aggregate outputs are published; the third-party source-image collection and generated thumbnails are excluded.
